@@ -34,6 +34,7 @@ btn.addEventListener('click', function() {
     mainDiv.classList.add = 'main-container';
 
     var counter = 0;
+    let perc = 960 / noGrid;
     for (let i = 0; i < noGrid; i++) {
         const row = document.createElement('div');
         row.classList.add('row');
@@ -42,6 +43,9 @@ btn.addEventListener('click', function() {
             grid.classList.add('grid-style');
             grid.classList.add('grid' + (++counter));
             row.appendChild(grid);
+            grid.style.width = perc + 'px';
+            grid.style.height = perc + 'px';
+            console.log(perc);
             grid.addEventListener('mouseover', function() {
                 grid.classList.add('grid-style-black');
             });
