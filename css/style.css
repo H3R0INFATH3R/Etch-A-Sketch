@@ -4,6 +4,26 @@
     padding: 0;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 18px;
+    margin: 24px auto;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .row {
     display: flex;
 }
