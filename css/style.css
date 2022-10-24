@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    display: flex;
+}
+
+.grid-style {
+    border: 1px solid black;
+    width: 24px;
+    height: 24px;
+}
+
+.grid-style-black {
+    background-color: black;
+}
